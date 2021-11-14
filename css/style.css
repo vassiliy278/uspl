@@ -1,0 +1,376 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+body {
+    width: 100%;
+    margin: auto;
+    background-color: #5967b2;
+    font-family: 'Seymour One', sans-serif;
+    position: relative;
+}
+header {
+    width: 100%;
+    margin: auto;
+}
+h4 {
+    color: white;
+    text-shadow: 2px 2px 0px black;
+    font-size: 1.65rem;
+}
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    font-style: italic;
+    color: ivory;
+    text-shadow: 3px 3px 0px black;
+}
+h2 {
+    text-align: center;
+    margin: 30px 0px 0px 0;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #333333;
+    background-color: #8e94c6;
+}
+.examples {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.acura {
+    display: flex;
+
+justify-content: space-between;
+}
+.focus {
+    display: flex;
+    justify-content: space-between;
+}
+.percent50 {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.percent32 {
+    width: 33.3%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: #8e94c6;
+    padding: 20px 0;
+}
+li {
+    display: flex;
+    list-style: none;
+    flex-grow: 1;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.menu_item_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color: #222222;
+    background-color: #fcca7b;
+    transition: .5s ease;
+}
+.menu_item_link:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+    text-align: center;
+}
+.menu li:nth-child(2) {
+    margin: 0 20px;
+}
+.menu li:nth-child(1), .menu li:nth-child(3){
+    margin: 0 30px;
+}
+.menu li {
+    text-align: center;
+}
+.main_photo {
+    width: 100%;
+}
+.photo_pitt {
+    width: 100%;
+}
+.telegram {
+    position: fixed;
+    z-index: 10;
+    width: 100px;
+    right: 4%;
+    bottom: 4%;
+    opacity: .8;
+    transition: .5s ease;
+}
+.telegram:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+section {
+    max-width: 100%;
+}
+.main_info {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+.two_photos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.photo_adapter1, .text_block {
+    display: block;
+    max-width: 50%;
+    flex-grow: 1;
+}
+.text_block {
+    box-sizing: border-box;
+}
+h3 {font-size: 1.25rem;
+    margin-bottom: 30px;
+
+}
+p { 
+    font-size: 1rem;
+    color: #ddd;
+}
+.text_description {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding: 20px 40px 0px 40px;
+    color: #fff;
+    box-sizing: border-box;
+    height: 100%;
+}
+.photo_picture {
+    max-width: 100%;
+    box-sizing: border-box;
+
+}
+
+.contacts {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+.flex_element {
+    text-align: center;
+    width: 30%;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.icon {
+    margin: 0 10px;
+}
+.phone, .address {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px;
+}
+.phone {
+    text-shadow: 3px 3px 0px black;
+}
+.novaposhta {
+    opacity: .9;
+}
+.flex_picture {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.picture {
+    width: 50%;
+}
+.ramka {
+    font-size: 1.3rem;
+    text-shadow: 3px 3px 0px black;
+}
+.flex_picture {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+}
+.picture {
+    width: 50%;
+    margin: 0px 0px 7px 0px;
+    position: relative;
+}
+.picture::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 5px;
+    background-color: #8e94c6;
+    margin-bottom: 20px;
+    position: absolute;
+    z-index: 20;
+
+}
+.between_photos {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 0 10px;
+    color: #ddd;
+    text-align: center;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+.nova_poshta {
+    color: white;
+    text-shadow: 2px 2px 0px black;
+    font-size: 1.65rem;
+}
+.minus4 {
+    margin-top: -2px;
+}
+.between_h4 {
+    margin-top: 10px;
+    line-height: 1.5rem;
+}
+.price {
+    color: rgb(0,170,0);
+    font-size: 2rem;
+    text-shadow: 2px 2px 0px black;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+@media (max-width: 909px){
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+    }
+    .two_photos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+}
+.photo_adapter1, .text_block {
+    display: block;
+    max-width: 100%;
+}
+.text_description > h3 {
+    text-align: center;
+    font-size: 1.9rem;
+}
+h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+h1 {
+    font-size: 2rem;
+}
+p {
+    font-size: 1.25rem;
+    color: #ddd;
+}
+.menu_item_link {
+    font-size: 1.5rem;
+}
+.menu li:nth-child(2) {
+    margin: 0 5px;
+}
+.menu li:nth-child(1), .menu li:nth-child(3){
+    margin: 0 5px;
+}
+.telegram {
+    width: 50px;
+}
+.text_description {
+    padding-top: 20px;
+}
+iframe {
+    height: 210px;
+}
+.text_description h3:nth-child(5) {
+    margin-bottom: 10px;
+}
+.flex_element {
+    text-align: center;
+    width: 60%;
+}
+.second_block:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 5px;
+    background-color: #8e94c6;
+    margin-bottom: 20px;
+}
+.flex_picture {
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+}
+.picture {
+    width: 100%;
+    background-color: #222222;
+    margin: 0;
+}
+.between_photos {
+    width: 90%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+.nova_poshta {
+}
+}
+@media (min-width: 1369px) {
+    body {
+        width: 70%;
+    }
+}
+@media (min-width: 1921px) {
+    body {
+        width: 55%;
+    }
+}

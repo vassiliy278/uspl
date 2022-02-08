@@ -41,11 +41,10 @@
             <div class="photo_adapter1"><img class="photo_picture" src="img/adapter00.jpg" alt="фото рамки переходника номерного знака" title="рамка адаптер под европейский номерной знак"></div>
             <div class="text_block">
                 <div class="text_description">
-                    <h3>1. Пластиковый переходник<p>(выполнен из прозрачного оргстекла, толщиной в 3 мм)</p></h3>
-                    <h3>2. Саморезы 4.8х25мм - 4шт</h3>
-                    <h3>3. Болты 8х4мм - 4шт</h3>
-                    <h3>4. Шайбы - 4шт</h3>
-                    <h3>5. Проставочные кольца - 4шт</h3>
+                    <h3>1. Пластиковый переходник<p>(выполнен из прозрачного оргстекла, толщиной в 4 мм)</p></h3>
+                    <h3>2. Саморезы 5х30мм - 4шт</h3>
+                    <h3>3. Болты 10х4мм - 4шт</h3>
+                    <h3>4. Проставочные кольца - 4шт</h3>
                 </div> 
             </div>
              <div class="text_block">
@@ -97,5 +96,14 @@
     </div>
     </div>
     </section>
+    <script>
+
+fetch('https://liqpayvasya.herokuapp.com', {
+        method: 'GET'
+    }).then(res => res.text())
+    .then(res => console.log(res))
+
+
+    </script>
 </body>
 </html>

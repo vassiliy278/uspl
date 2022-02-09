@@ -106,12 +106,13 @@
     </section>
     <script>
 
-fetch('https://liqpayvasya.herokuapp.com', {
-        method: 'GET'
+fetch('https://liqpayvasya.herokuapp.com/pay', {
+        method: 'POST',
+        body: {
+            amount: 500
+        }
     }).then(res => res.text())
     .then(res => console.log(res))
-
-
     </script>
 </body>
 </html>

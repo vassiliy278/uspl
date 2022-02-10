@@ -32,6 +32,7 @@ function changeCountValue(step) {
         amountValue.style.color = 'rgb(45, 205, 116)'
         
     } else {
+        price=275
         amountValue.innerText = countValue*price
         amountValue.nextElementSibling.style.color = 'inherit'
         amountValue.style.color = 'inherit'

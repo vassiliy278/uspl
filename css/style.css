@@ -310,15 +310,25 @@ p {
     position: relative;
 }
 .count_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     font-size: 3rem;
-    opacity: .7;
+    /* opacity: .7; */
+    background: none;
+    color: white;
+    border: 1px solid white;
 }
 .count_btn:hover, button {
     opacity: 1;
     cursor: pointer;
+}
+.count_btn:disabled {
+    border: 1px solid rgba(255, 255, 255, 0.397);
+    color: rgba(255, 255, 255, 0.397);
 }
 .counter_value {
     font-size: 10rem;

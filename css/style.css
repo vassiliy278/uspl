@@ -177,7 +177,7 @@ p {
 }
 
 .contacts {
-    margin: 20px 0;
+    padding: 20px 0;
     display: flex;
     flex-wrap: wrap;
     -ms-align-items: center;
@@ -185,16 +185,19 @@ p {
     justify-content: space-between;
     flex-direction: column;
     font-size: 1.5rem;
+    background: #394277;
 }
 .flex_element {
     text-align: center;
-    width: 30%;
+    /* width: 30%; */
 }
 .icons {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
+    margin: 10px 0px;
 }
 .icon {
     margin: 0 10px;
@@ -271,13 +274,194 @@ p {
     line-height: 1.5rem;
 }
 .price {
-    color: rgb(0,170,0);
+    color: rgb(45, 205, 116);
     font-size: 2rem;
     text-shadow: 2px 2px 0px black;
     margin-top: 20px;
     margin-bottom: 0;
 }
+.order_wrapper {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.order_container {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.order_container h4 {
+    margin: 20px 0px;
+    text-align: center;
+}
+.count_setter {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.count_setter > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.count_setter_item {
+    position: relative;
+}
+.count_btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 3rem;
+    opacity: .7;
+}
+.count_btn:hover, button {
+    opacity: 1;
+    cursor: pointer;
+}
+.counter_value {
+    font-size: 10rem;
+    text-shadow: 3px 3px 0px rgb(0, 0, 0);
+    color: #fff;
+}
+.amount_container {
+    display: flex;
+    justify-content: center;
+    color: #ddd;
+}
+.amount_value {
+    font-size: 1.5rem;
+}
+.pcs {
+    position: absolute;
+    top: 150px;
+    font-size: 1.3rem;
+    color: #ddd
+}
+.mount_type {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+    grid-gap: 10px;
+    height: 50vh;
+}
+.mount_type button {
+    /* margin: 10px; */
+    font-family: 'Seymour One', sans-serif;
+    background: #fff;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    opacity: 0.6;
+    cursor: pointer;
+    transform: scale(0.96);
+    transition: all 300ms ease;
+}
+#gold {
+    background-image: url('../img/gold2.jpg');
+}
+#silver {
+    background-image: url('../img/silver2.jpg');
+}
+.mount_type button span {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.3rem;
+    color: #eee;
+}
+.active_mount {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+.form_container {
+    display: flex;
+    justify-content: center;
+}
+.form_container form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.form_container label, .form_container input {
+    min-width: 500px;
+    max-width: 1000px;
+    height: 30px;
+}
+.form_container label {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+    margin-left: 15px;
+}
+.form_container label::after {
+    content: '*';
+    display: table;
+    color: tomato;
+    position: absolute;
+    top: -12px;
+    left: -15px;
+}
+.form_container button{
+    margin-top: 50px;
+    height: 50px;
+}
+input:focus {
+    outline: none;
+    border-color: none;
+}
+.invalid_input {
+    border-color: tomato;
+}
+input, button {
+    font-family: 'Seymour One', sans-serif;
+}
+input::placeholder {
+    opacity: .6;
+}
+.button_container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.novaposhta {
+    height: 50px;
+}
+.privat {
+    height: 60px;
+}
+.apple, .gpay {
+    margin-top: 10px;
+    height: 30px;
+}
+.show_terms {
+   height: 0;
+   overflow: hidden;
+}
+#termsandreturn {
+    font-size: 75%;
+}
+.termsbutton:hover {
+    cursor: pointer;
+}
 @media (max-width: 909px){
+    .form_container label, .form_container input {
+        min-width: 300px;
+        max-width: 1000px;
+        height: 30px;
+    }
+    .form_container label {
+        font-size: 1.5rem;
+    }
+    .mount_type {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }
 html {
     scroll-behavior: smooth;
     font-size: 10px;
@@ -331,7 +515,7 @@ iframe {
 }
 .flex_element {
     text-align: center;
-    width: 60%;
+    /* width: 60%; */
 }
 .second_block:before {
     display: block;
@@ -362,6 +546,14 @@ iframe {
     margin: 20px 0px;
 }
 .nova_poshta {
+    width: 100px;
+}
+.count_btn {
+    width: 50px;
+    height: 50px;
+}
+.pcs {
+    top: 100px;
 }
 }
 @media (min-width: 1369px) {

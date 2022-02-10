@@ -27,11 +27,11 @@
         <ul class="menu">
             <li><a id="photos" class="menu_item_link" href="#photoss">Фото</a></li>
             <li><a class="menu_item_link" href="#howitswork">Как это работает</a></li>
-            <li><a class="menu_item_link" href="#contact">Купить</a></li>
+            <li><a class="menu_item_link" href="#order">Купить</a></li>
         </ul>                 
     </header>
     <section class="examples">
-        <div class="focus">
+        <!-- <div class="focus">
             <img class="percent50" src="img/focus.jpg" alt="">
             <img class="percent50" src="img/acura4.jpg" alt="">
         </div>
@@ -39,7 +39,7 @@
             <img class="percent32" src="img/acura1.jpg" alt="">
             <img class="percent32" src="img/acura2.jpg" alt="">
             <img class="percent32" src="img/acura3.jpg" alt="">
-        </div>
+        </div> -->
     </section>
     <section class="main_info">
         <h2>Будь красавчиком! В том числе и на дороге!</h2>
@@ -59,61 +59,150 @@
                 <div class="text_description">
                     <h3 class="second_block ramka">Рамка переходник с американского номера на европейский</h3>
                     <h3 class="second_block" >Прозрачный пластик -<p>это замечательная возможность установить переходник на автомобиль любого цвета!</p></h3>
-                     <h3 class="second_block" >Крепежные отверстия<p>стандартные крепления американских номеров имеют расстояния между центрами отверстий: 180х120мм</p></h3>
-                     <h3 class="second_block" >Все 4 отверстия<p>рассверлены конусом под потай</p></h3>
+                     <h3 class="second_block" >Крепежные отверстия<p>стандартные крепления американских номеров имеют расстояния между центрами отверстий: <span style="font-size: 125%;">180х120мм</span></p></h3>
+                     <h3 class="second_block" style="color: rgb(0,0,0)"><span style="text-shadow: 2px 2px 0px rgb(187, 187, 187);">Рекомендуем померять</span><p>расстояния между отверстиями на вашем авто перед заказом!</p></h3>
                 </div> 
             </div>
             <div class="photo_adapter1 minus4"><img class="photo_picture" src="img/adapter05.jpg" alt="рамка под номерной знак американский" title="рамка под номерной знак американский"></div>
         </div>
-        <h2 id="howitswork">Видео инструкция</h2> <!-- video instruction -->
+        <h2 id="howitswork">Видео инструкция</h2> 
        <iframe  width="100%" height="500px" src="https://www.youtube-nocookie.com/embed/XcjMd1fQG_k?controls=0&amp;start=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <h2 id="photoss">Фото</h2>
         <div class="flex_picture">
-            <img src="img/adapter03.jpg" alt="переходная рамка с американского номера" class="picture" title="переходная рамка с американского номера">
+            <img src="img/gold2.jpg" alt="переходная рамка с американского номера" class="picture" title="переходная рамка с американского номера">
             <div class="between_photos">
                 <h4>Переходная рамка с американского номера</h4>   
                 <p class="between_h4">В комплекте идет только прозрачный переходинк + крепления</p>
             </div>
-            <img src="img/adapter02.jpg" alt="рамка под американский номер купить" class="picture" title="рамка под американский номер купить">
+            <img src="img/gold3.jpg" alt="рамка под американский номер купить" class="picture" title="рамка под американский номер купить">
             <div class="between_photos">
                 <h4>Рамка переходник с американского номера на европейский</h4>   
                 <p class="between_h4">позволит вам разместить номер европейского стандарта по центру штатного места</p>
            </div> 
-            <img src="img/adapter01.jpg" alt="рамка переходник с американского номера на европейский" class="picture" title="рамка переходник с американского номера на европейский">
+            <img src="img/silver2.jpg" alt="рамка переходник с американского номера на европейский" class="picture" title="рамка переходник с американского номера на европейский">
             <div class="between_photos">
                 <h4>Крепление американского номера</h4>
                 <p class="between_h4">будет замаскировано - адаптер под европейский номерной знак поставляется в синей защитной пленке. Ее, без труда, можно снять перед установкой, а сама рамка-переходник прозраного цвета!</p>
             </div>
-            <img src="img/adapter04.jpg" alt="крепление американского номера" title="крепление американского номера" class="picture" style="padding: 0;">
+            <img src="img/silver4.jpg" alt="крепление американского номера" title="крепление американского номера" class="picture" style="padding: 0;">
             <div class="between_photos">
                 <h4>Отправляем Новой почтой</h4>
                  <p class="between_h4"> наложенным платежем без предоплаты!</p>
-                 <h3 class="price">Цена: 250.00 грн</h3>
+                 <h3 class="price">Цена: 275.00 грн</h3>
             </div>
+        </div>     
+     <div class="order_wrapper">
+         <div class="order_container" id="order">
+            <h2 style="margin-top: 0;">Закажите сейчас!</h2>
+            <div class="count_setter">
+                <div class="count_setter_item"><button onclick="changeCountValue.call(this, '-')" class="count_btn" id="itemminus" disabled>-</button></div>
+                <div class="count_setter_item"><div class="counter_value">1</div><span class="pcs">шт</span></div>
+                <div class="count_setter_item"><button class="count_btn" id="itemplus" onclick="changeCountValue.call(this, '+')">+</button></div>
+            </div>
+            <div class="amount_container">
+                <span class="amount_value">275</span>
+                <span class="amount_currency">&nbsp;грн</span>
+            </div>
+         </div>
+         <div class="order_container">
+            <h2 style="margin-top: 0;">Какой крепеж?</h2>
+            <div class="mount_type">
+                <button id="gold" class="mountItem active_mount" ><span>Ford, Honda, Subaru, Tesla, Acura</span></button>
+                <button id="silver" class="mountItem"><span>VW, BMW, Porsche</span></button>
+            </div>
+         </div>
+         <div class="order_container">
+            <h2 style="margin-top: 0;">Куда поедет?</h2>
+            <div class="form_container">
+                <form action="" autocomplete="off" spellcheck="false">
+                    <label for="city">Город</label>
+                    <input type="text" name="city" required minlength="3" maxlength="16" placeholder="Одесса">
+                    <label for="warehouse">Отд. НП</label>
+                    <input type="text" name="warehouse" required minlength="1" maxlength="4" placeholder="278">
+                    <label for="firstName">Имя</label>
+                    <input type="text" name="firstName" required placeholder="Бастиль" minlength="2" maxlength="15">
+                    <label for="lastName">Фамилия</label>
+                    <input type="text" name="lastName" required placeholder="Смит" minlength="2" maxlength="15">
+                    <label for="phone">Телефон</label>
+                    <input type="text" name="phone" required placeholder="0992781405" minlength="10" maxlength="10">
+                </form> 
+            </div>
+            <div class="button_container">
+                <button type="submit" style="width: 150px; height: 50px; margin-top:30px" disabled>Купить!</button>
+            </div>
+         </div>
+     </div>
+     <h2 style="margin-top: 0;">Контакты</h2>
+    <footer id="contact" class="contacts">
+        <a  class="flex_element phone" href="tel:+380937759577">093-775-95-77</a>
+        <a class="phone" style="color: #34abdf;" href="http://t.me/vassiliysmith">Telegram</a>
+        <span class="address"><a class="address" href="https://goo.gl/maps/o87s1bkWgLuopW7j7" title="Как добраться">г.Киев, ул.Курчатова 11</a></span>
+        <h2 style="margin-top: 0; width: 100%;">Доставка и оплата</h2>
+        <div class="icons flex_element">
+        <img  class="flex_element icon novaposhta" src="img/np.svg" alt="" >
+        <img  class="flex_element icon privat" src="img/privat.svg" alt="">
+        <img  class="flex_element icon apple" src="img/Apple_Pay_logo.svg" alt="">
+        <img  class="flex_element icon gpay" src="img/gpay.svg"  alt="">
         </div>
-        <!-- <p style="text-align: center;">Если у вас остались какие-либо вопросы - напишите в телеграмм или позвоните по телефону.</p> -->
-     <h2 style="margin-top: 0;">Закажите прямо сейчас</h2>   <!-- third party -->
-    <div id="contact" class="contacts">
-    <a  class="flex_element phone" href="tel:+380937759577">093-775-95-77</a>
-    <a class="phone" style="color: #34abdf;" href="http://t.me/vassiliysmith">Купить в Telegram</a>
-    <span class="address"><a class="address" href="https://goo.gl/maps/o87s1bkWgLuopW7j7" title="Как добраться">г.Киев, ул.Армянская 2</a></span>
+        <h2 style="margin-top: 0; width: 100%;">Условия обмена/возврата</h2>
+        <a  class="flex_element phone termsbutton" style="margin-top: 20px" onclick="showTerms.call(this)">читай тут</a>
+        <div id="termsandreturn" class="show_terms">
+            <h1 itemprop="name">Условия обмена и возврата</h1>
 
-    <div class="icons flex_element">
-    <img  class="flex_element icon novaposhta" src="img/np.svg" alt="" style="width: 15%;">
-    <img  class="flex_element icon" src="img/privat.svg" alt="">
-    </div>
-    </div>
+            <p>В соответствии с Законом Украины «О защите прав потребителей» вы можете в течение 14 дней с момента покупки вернуть товары, при условии выполнения всех норм предусмотренных Законом.</p>
+            
+            <h1>Условия обмена/возврата товара надлежащего качества</h1>
+            
+            <p><em>Статья 9. Согласно Закона Украины «О защите прав потребителей»:</em></p>
+            
+            <p>Потребитель имеет право обменять непродовольственный товар надлежащего качества на аналогичный у продавца, у которого он был приобретён, если товар не удовлетворил его по форме, габаритам, фасону, цвету, размеру или по другим причинам не может быть им использован по назначению. Потребитель имеет право на обмен товара надлежащего качества в течение четырнадцати дней, не считая дня покупки.</p>
+            
+            <p>Обмен товара надлежащего качества производится:</p>
+        
+             <p style="margin-left:20px">- если он не использовался;</p>
+             <p style="margin-left:20px">- если сохранён его товарный вид;</p>
+             <p style="margin-left:20px">- потребительские свойства, пломбы, ярлыки;</p>
+             <p style="margin-left:20px">- расчетный документ, выданный потребителю вместе с проданным товаром.</p>
+            
+            <p>Условия обмена/возврата товара ненадлежащего качества</p>
+            
+            <p><em>Статья 8. Согласно Закона Украины «О защите прав потребителей»:</em></p>
+            
+            <p>В случае выявления на протяжении установленного гарантийного срока недостатков потребитель, в порядке и в сроки, установленные законодательством, имеет право требовать:</p>
+            
+            <ul>
+             <p style="margin-left:20px">- пропорционального уменьшения цены;</p>
+             <p style="margin-left:20px">- безвозмездного устранения недостатков товара в разумный срок;</p>
+             <p style="margin-left:20px">- возмещения расходов на устранение недостатков товара.</p>
+            </ul>
+            
+            <p>Требования потребителя, предусмотренные настоящей статьей, не подлежат удовлетворению, если продавец, производитель (предприятие, которое удовлетворяет требования потребителя, установленные частью первой этой статьи) докажут, что недостатки товара возникли вследствие нарушения потребителем правил пользования товаром или его хранения. Потребитель вправе участвовать в проверке качества товара лично или через своего представителя.</p>
+                        
+            <h1>Порядок возврата товара надлежащего качества</h1>
+            
+            <p>При возврате товара необходимо связаться с нашим менеджером для уточнения какой товар необходимо вернуть.</p>
+            
+            <p>Товар отправляется на склад Новой Почты по адресу г. Киев отд. 112 (контактную особу уточните у менеджера по телефонам в разделе контакты) все расходы, связанные с упаковкой, доставкой, и комиссией по возврату денег несет покупатель. Возврат денежных средств происходит в течении 3х. робочих дней с момента получения товара продавцом.&nbsp;</p>
+            
+            <p>&nbsp;</p>
+            
+            <h1>Порядок возврата товара не надлежащего качества</h1>
+            
+            <p>При возврате товара необходимо связаться с нашим менеджером для уточнения какой товар необходимо вернуть, и подробно описать причину возврата.</p>
+            
+            <p>Товар отправляется на склад Новой Почты по адресу г. Киев отд. 112 (контактную особу уточните у менеджера по телефонам в разделе контакты).</p>
+            
+            <p>В течении 3х рабочих дней производится проверка товара,&nbsp;в случае подтверждения дефекта замена на новый производится силами и за счет продавца, при необходимости возврата денежных средств происходит в течении 3х. рабочих дней с момента проверки товара продавцом.</p>
+            
+            <p>Возврат денежных средств происходит только тем способом которым осуществлялась оплата!</p>
+            
+            <p>Также любой товар можно вернуть по адресу&nbsp;&nbsp;указанному в разделе <a href="#contact">контакты</a>.</p>
+            
+            <p><b>В связи со спецификой реализуемого на сайте товара возврат возможен только до его установки.</b></p>
+            
+            <p>&nbsp;</p></div>
+    </footer>
     </section>
-    <script>
-
-fetch('https://liqpayvasya.herokuapp.com/pay', {
-        method: 'POST',
-        body: JSON.stringify({amount: 500}),
-        headers: {
-      'Content-Type': 'application/json'
-    }
-    }).then(res => res.text())
-    .then(res => console.log(res))
-    </script>
+    <script src="./index.js"></script>
 </body>
 </html>

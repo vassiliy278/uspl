@@ -70,7 +70,10 @@ form.addEventListener('input', function(e){
     if (this.checkValidity()) {
         const {count, mount, city, warehouse, phone, firstName, lastName} = postData
         fetch(`https://liqpayvasya.herokuapp.com/pay/${count}/${mount}/${city}/${warehouse}/${firstName}/${lastName}/${phone}`)
-        .then(res => res.text())
+        .then(res => {
+            btnContainer.innerHTML = `<button type="submit"  class="spinner" style="width: 150px; height: 50px; margin-top:30px" disabled>Загрузка...</button> `
+            res.text()
+        })
         .then(res => {
             btnContainer.innerHTML = res
         })

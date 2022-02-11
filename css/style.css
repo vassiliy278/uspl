@@ -576,3 +576,23 @@ iframe {
         width: 55%;
     }
 }
+
+.spinner {
+    animation: rotate 1s linear infinite;
+    z-index: 2;
+    /* position: absolute; */
+}
+    
+  @keyframes rotate {
+      0% {
+          transform: scale(1.2);
+      }
+      50% {
+          transform: scale(1);
+      }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+  
+  

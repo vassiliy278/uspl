@@ -82,9 +82,12 @@ form.addEventListener('submit', e => {
     e.preventDefault()
 
 })
+function showAbout() {
+    this.nextElementSibling.classList.toggle('show_terms')
+    window.location.href = '#aboutus'
+}
 
 function showTerms() {
-    
     this.nextElementSibling.classList.toggle('show_terms')
     window.location.href = '#termsandreturn'
 }

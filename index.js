@@ -72,7 +72,7 @@ form.addEventListener('input', function(e){
         fetch(`https://liqpayvasya.herokuapp.com/pay/${count}/${mount}/${city}/${warehouse}/${firstName}/${lastName}/${phone}`)
         .then(res => {
             btnContainer.innerHTML = `<button type="submit"  class="spinner" style="width: 150px; height: 50px; margin-top:30px" disabled>Загрузка...</button> `
-            res.text()
+            return res.text()
         })
         .then(res => {
             btnContainer.innerHTML = res

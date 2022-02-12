@@ -492,7 +492,7 @@ input::placeholder {
     justify-content: center;
 }
 .game_img {
-    width: 150px;
+    height: 80px;
     margin: 10px;
 }
 .adapter_schema {
@@ -520,7 +520,7 @@ input::placeholder {
 }
 @media (max-width: 909px){
     .game_img_many {
-        width: 80px;
+        height:  50px;
     }
     .count_setter {
         height: 100vh;

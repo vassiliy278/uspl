@@ -11,7 +11,16 @@ const buttonDec = document.getElementById('itemminus')
 const amountValue = document.querySelector('.amount_value')
 let price = 275
 const gameContainer = document.querySelector('.game_container')
-
+const showSchema = () => {
+    document.body.classList.add('full_width')
+    document.body.insertAdjacentHTML('afterbegin', `
+    <div class="adapter_schema">
+        <img class="adapter_schema_img" src="./img/schema_adapter.svg" alt="">
+        <div class="close_schema" onclick="{document.body.classList.remove('full_width'); this.parentElement.remove(); }">OK</div>
+    </div>
+`)
+}
+gameContainer.addEventListener('click', showSchema)
 function changeCountValue(step) {
     if(step == '-'){
         gameContainer.lastElementChild.remove()

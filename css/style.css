@@ -490,7 +490,29 @@ input::placeholder {
     width: 150px;
     margin: 10px;
 }
-
+.adapter_schema {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 200;
+    top: 0;
+}
+.game_container:hover, .close_schema:hover {
+    cursor: pointer;
+}
+.adapter_schema_img {
+    width: 100%;
+}
+.close_schema {
+    padding: 10px;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 @media (max-width: 909px){
     .game_img_many {
         width: 80px;
@@ -605,6 +627,9 @@ iframe {
 .pcs {
     top: 50px;
 }
+}
+.full_width {
+    width: 100% !important;
 }
 @media (min-width: 1369px) {
     body {

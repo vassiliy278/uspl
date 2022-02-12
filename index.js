@@ -41,7 +41,7 @@ function changeCountValue(step) {
             this.setAttribute('disabled', 'disabled')
         }
         btnValue.innerText = countValue
-        gameContainer.insertAdjacentHTML('afterbegin', `<img src="./img/game.svg" alt="" class="game_img">`)
+        gameContainer.insertAdjacentHTML('beforeend', `<img src="./img/game.svg" alt="" class="game_img">`)
         
     }
     if(countValue >= 4) {

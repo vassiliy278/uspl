@@ -490,6 +490,7 @@ input::placeholder {
     width: 100%;
     display: flex;
     justify-content: center;
+    height: 30px;
 }
 .game_img {
     height: 80px;

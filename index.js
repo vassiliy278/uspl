@@ -68,10 +68,11 @@ form.addEventListener('input', function(e){
         }
         postData[e.target.name] = e.target.value
     if (this.checkValidity()) {
+        btnContainer.innerHTML = `<button type="submit"  class="spinner" style="width: 150px; height: 50px; margin-top:30px" disabled>Загрузка...</button> `
+
         const {count, mount, city, warehouse, phone, firstName, lastName} = postData
         fetch(`https://liqpayvasya.herokuapp.com/pay/${count}/${mount}/${city}/${warehouse}/${firstName}/${lastName}/${phone}`)
         .then(res => {
-            btnContainer.innerHTML = `<button type="submit"  class="spinner" style="width: 150px; height: 50px; margin-top:30px" disabled>Загрузка...</button> `
             return res.text()
         })
         .then(res => {

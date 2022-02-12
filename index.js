@@ -42,7 +42,7 @@ function changeCountValue(step) {
         }
         btnValue.innerText = countValue
         gameContainer.insertAdjacentHTML('afterbegin', `<img src="./img/game.svg" alt="" class="game_img">`)
-
+        
     }
     if(countValue >= 4) {
         document.querySelectorAll('.game_img').forEach(e => {
@@ -83,7 +83,6 @@ allMounts.forEach(e => {
 const submitButton = document.createElement('button')
 const btnContainer = document.querySelector('.button_container')
 
-let showButton = true
 const form = document.querySelector('form')
 form.addEventListener('input', function(e){
         if(!e.target.validity.valid) {
@@ -93,11 +92,10 @@ form.addEventListener('input', function(e){
         }
         postData[e.target.name] = e.target.value
     if (this.checkValidity()) {
-        btnContainer.innerHTML = `                <div class="spinner" >
+        btnContainer.innerHTML = `<div class="spinner" >
         <img src="./img/game.svg" alt="" class="game_img ">
         <div class="load_text">загрузка...</div>
-    </div>`
-
+            </div>`
         const {count, mount, city, warehouse, phone, firstName, lastName} = postData
         fetch(`https://liqpayvasya.herokuapp.com/pay/${count}/${mount}/${city}/${warehouse}/${firstName}/${lastName}/${phone}`)
         .then(res => {

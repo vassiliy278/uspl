@@ -95,7 +95,7 @@ form.addEventListener('input', function(e){
     if (this.checkValidity()) {
         btnContainer.innerHTML = `                <div class="spinner" >
         <img src="./img/game.svg" alt="" class="game_img ">
-        <div class="load_text" style="position: absolute;">загрузка...</div>
+        <div class="load_text">загрузка...</div>
     </div>`
 
         const {count, mount, city, warehouse, phone, firstName, lastName} = postData

@@ -363,9 +363,9 @@ p {
     grid-gap: 10px;
     height: 50vh;
 }
-.mountItem {
+/* .mountItem {
     animation: updown 2s linear infinite;
-}
+} */
 .mount_type button {
     /* margin: 10px; */
     font-family: 'Seymour One', sans-serif;
@@ -398,11 +398,11 @@ p {
     transform: scale(1) !important;
     animation: none;
 }
-.active_mount::after {
+/* .active_mount::after {
     display: table;
     content: 'V';
     color: black;
-}
+} */
 .after_mount > * {
     color: #ccc;
 }
@@ -499,7 +499,7 @@ input::placeholder {
     z-index: 200;
     top: 0;
 }
-.game_container:hover, .close_schema:hover {
+.game_container:hover, .close_schema {
     cursor: pointer;
 }
 .adapter_schema_img {
@@ -643,12 +643,14 @@ iframe {
 }
 
 .spinner {
+    position: relative;
     animation: spinner 1s linear infinite;
     z-index: 2;
     display: flex;
     width: 150px;
 }
 .load_text {
+    position: absolute;
     color: rgba(9, 9, 9, 0.605);
     font-size: 0.6rem;
     top: 50%;

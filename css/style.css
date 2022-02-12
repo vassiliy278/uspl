@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
     font-size: 16px;
 }
+* {
+    line-height: 1.5rem !important;
+    touch-action: manipulation;
+}
 body {
     width: 100%;
     margin: auto;
@@ -288,7 +292,7 @@ p {
 }
 .order_container {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 .order_container h4 {
     margin: 20px 0px;
@@ -298,7 +302,7 @@ p {
     display: grid;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 80vh;
     grid-template-columns: 1fr 1fr 1fr;
 }
 .count_setter > * {
@@ -315,9 +319,8 @@ p {
     align-items: center;
     width: 80px;
     height: 80px;
-    border-radius: 50%;
+    border-radius: 40px;
     font-size: 3rem;
-    /* opacity: .7; */
     background: none;
     color: white;
     border: 1px solid white;
@@ -336,16 +339,20 @@ p {
     color: #fff;
 }
 .amount_container {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     color: #ddd;
 }
 .amount_value {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 .pcs {
     position: absolute;
-    top: 150px;
+    top: 100px;
     font-size: 1.3rem;
     color: #ddd
 }
@@ -355,6 +362,9 @@ p {
     margin-top: 10px;
     grid-gap: 10px;
     height: 50vh;
+}
+.mountItem {
+    animation: updown 2s linear infinite;
 }
 .mount_type button {
     /* margin: 10px; */
@@ -367,6 +377,7 @@ p {
     cursor: pointer;
     transform: scale(0.96);
     transition: all 300ms ease;
+
 }
 #gold {
     background-image: url('../img/gold2.jpg');
@@ -385,6 +396,15 @@ p {
 .active_mount {
     opacity: 1 !important;
     transform: scale(1) !important;
+    animation: none;
+}
+.active_mount::after {
+    display: table;
+    content: 'V';
+    color: black;
+}
+.after_mount > * {
+    color: #ccc;
 }
 .form_container {
     display: flex;
@@ -437,6 +457,8 @@ input::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
+    position: relative;
 }
 .novaposhta {
     height: 50px;
@@ -455,10 +477,27 @@ input::placeholder {
 #termsandreturn {
     font-size: 75%;
 }
+.termsbutton {
+    line-height: 2.5rem !important;
+}
 .termsbutton:hover {
     cursor: pointer;
 }
+.game_container {
+    flex-wrap: wrap;
+}
+.game_img {
+    width: 150px;
+    margin: 10px;
+}
+
 @media (max-width: 909px){
+    .game_img_many {
+        width: 80px;
+    }
+    .count_setter {
+        height: 100vh;
+    }
     .form_container label, .form_container input {
         min-width: 300px;
         max-width: 1000px;
@@ -561,9 +600,10 @@ iframe {
 .count_btn {
     width: 50px;
     height: 50px;
+    border-radius: 25px;
 }
 .pcs {
-    top: 100px;
+    top: 50px;
 }
 }
 @media (min-width: 1369px) {
@@ -578,12 +618,20 @@ iframe {
 }
 
 .spinner {
-    animation: rotate 1s linear infinite;
+    animation: spinner 1s linear infinite;
     z-index: 2;
-    /* position: absolute; */
+    display: flex;
+    width: 150px;
+}
+.load_text {
+    color: rgba(9, 9, 9, 0.605);
+    font-size: 0.6rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
     
-  @keyframes rotate {
+  @keyframes spinner {
       0% {
           transform: scale(1.05);
       }
@@ -594,5 +642,17 @@ iframe {
       transform: scale(1.05);
     }
   }
+
+  @keyframes updown {
+    0% {
+        transform: scale(0.97);
+    }
+    50% {
+        transform: scale(0.96);
+    }
+  100% {
+    transform: scale(0.97);
+  }
+}
   
   

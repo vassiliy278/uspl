@@ -2,6 +2,23 @@ html {
     scroll-behavior: smooth;
     font-size: 16px;
 }
+.initial_loader {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    z-index: 300;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: black;
+    transition: opacity 300ms ease;
+}
+.remove_loader {
+    opacity: 0;
+}
 * {
     line-height: 1.5rem !important;
     touch-action: manipulation;
@@ -653,6 +670,8 @@ iframe {
     animation: spinner 1s linear infinite;
     z-index: 2;
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 150px;
 }
 .load_text {

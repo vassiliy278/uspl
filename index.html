@@ -18,9 +18,28 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Seymour+One&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="apple-touch-icon" href="./img/favicon.png"/>
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
     <title>Рамка адаптер под европейский номерной знак</title>
 </head>
 <body>
+    <div class="initial_loader">
+        <div class="spinner" >
+            <img src="./img/game.svg" alt="" class="game_img " style="height: 120px;">
+            <div class="load_text">загружаю...</div>
+        </div>`
+    </div>
+    <script>
+            window.onload = () => {
+                console.log('loaded')
+                const loader = document.querySelector('.initial_loader')
+                loader.classList.add('remove_loader')
+                loader.ontransitionend = function() {
+                    console.log('removed')
+                    this.remove()
+                }
+            }
+    </script>
     <div class="telegram"><a href="http://t.me/vassiliysmith" class="telegram_button" title="Заказать в Telegram сейчас!"><img src="img/tlg.svg" alt="заказать в телеграмм"></a></div>
     <header>
         <h1>Переходник американского USA номера</h1>

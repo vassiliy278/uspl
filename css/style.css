@@ -437,6 +437,7 @@ p {
     min-width: 500px;
     max-width: 1000px;
     height: 30px;
+    font-size: 16px;
 }
 .form_container label {
     margin-top: 30px;

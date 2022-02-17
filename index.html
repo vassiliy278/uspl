@@ -32,13 +32,9 @@
     </div>
     <script>
             window.onload = () => {
-                console.log('loaded')
                 const loader = document.querySelector('.initial_loader')
                 loader.classList.add('remove_loader')
-                loader.ontransitionend = function() {
-                    console.log('removed')
-                    this.remove()
-                }
+                loader.ontransitionend = this.remove
             }
     </script>
     <div class="telegram"><a href="http://t.me/vassiliysmith" class="telegram_button" title="Заказать в Telegram сейчас!"><img src="img/tlg.svg" alt="заказать в телеграмм"></a></div>

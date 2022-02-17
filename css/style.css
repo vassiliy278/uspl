@@ -34,7 +34,7 @@ header {
     width: 100%;
     margin: auto;
 }
-h4 {
+h3.h4 {
     color: white;
     text-shadow: 2px 2px 0px black;
     font-size: 1.65rem;
@@ -312,7 +312,7 @@ p {
     width: 100%;
     margin-bottom: 10px;
 }
-.order_container h4 {
+.order_container h3.h4 {
     margin: 20px 0px;
     text-align: center;
 }

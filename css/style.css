@@ -517,6 +517,11 @@ input::placeholder {
     display: flex;
     justify-content: center;
     height: 30px;
+    opacity: .8;
+}
+.game_container:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 .game_img {
     height: 80px;
@@ -546,6 +551,14 @@ input::placeholder {
     transform: translateX(-50%);
 }
 @media (max-width: 909px){
+    .close_schema {
+        padding: 10px;
+        color: white;
+        position: absolute;
+        bottom: 110px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
     .game_img_many {
         height:  50px;
     }

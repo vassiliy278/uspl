@@ -15,7 +15,7 @@ const showSchema = () => {
     document.body.classList.add('full_width')
     document.body.insertAdjacentHTML('afterbegin', `
     <div class="adapter_schema">
-        <img class="adapter_schema_img" src="./img/schema_adapter.svg" alt="">
+        <img class="adapter_schema_img" src="./img/schema_adapter.svg" alt="переходник номера схема" title="посмотреть схему">
         <div class="close_schema" onclick="{document.body.classList.remove('full_width'); this.parentElement.remove(); }">OK</div>
     </div>
 `)
